@@ -1,6 +1,6 @@
 <?php 
 
-require_once __DIT__ . './shop.php';
+require_once __DIR__ . './shop.php';
 
 class Products {
     public $weight;
@@ -20,54 +20,51 @@ class Products {
     }
 }
 
-public function getWeight() {
-    return $this->weight;
+function getWeight() {
+return $this->weight;
 }
 
-public function setWeight($weight) {
+ function setWeight($weight) {
     $this->weight = $weight;
 }
 
-public function getPrice() {
+ function getPrice() {
     return $this->price;
 }
 
-public function setPrice($price) {
+ function setPrice($price) {
     $this->price = $price;
 }
 
-public function getName() {
+ function getName() {
     return $this->name;
 }
 
-public function setName($name) {
+ function setName($name) {
     $this->name = $name;
 }
 
-public function getDescription() {
+ function getDescription() {
     return $this->description;
 }
 
-public function setDescription($description) {
+ function setDescription($description) {
     $this->description = $description;
 }
 
-public function getImage() {
+ function getImage() {
     return $this->image;
 }
 
-public function setImage($image) {
+ function setImage($image) {
     $this->image = $image;
 }
 
-public function getCategory() {
+ function getCategory() {
     return $this->category;
 }
 
-public function setCategory($category) {
+ function setCategory($category) {
     $this->category = $category;
 }
-
-}
-
 ?>

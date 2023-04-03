@@ -21,62 +21,62 @@ class Food extends Products {
         $this->category = $category;
         $this->ingredients = $ingredients;
     }
+    function getWeight() {
+       return $this->weight;
+    }
+    
+    function setWeight($weight) {
+       $this->weight = $weight;
+    }
+    
+    function getPrice() {
+       return $this->price;
+    }
+    
+    function setPrice($price) {
+       $this->price = $price;
+    }
+    
+    function getName() {
+       return $this->name;
+    }
+    
+    function setName($name) {
+       $this->name = $name;
+    }  
+    
+    function getDescription() {
+       return $this->description;
+    }
+    
+    function setDescription($description) {
+       $this->description = $description;
+    }
+    
+    function getImage() {
+       return $this->image;
+    }
+    
+    function setImage($image) {
+       $this->image = $image;
+    }
+    
+    function getCategory() {
+       return $this->category;
+    }
+    
+    function setCategory($category) {
+       $this->category = $category;
+    }
+    
+    function getIngredients() {
+       return $this->ingredients;
+    }
+    
+    function setIngredients($ingredients) {
+       $this->ingredients = $ingredients;
+    }
 }
 
-public function getWeight() {
-    return $this->weight;
-}
-
-public function setWeight($weight) {
-    $this->weight = $weight;
-}
-
-public function getPrice() {
-    return $this->price;
-}
-
-public function setPrice($price) {
-    $this->price = $price;
-}
-
-public function getName() {
-    return $this->name;
-}
-
-public function setName($name) {
-    $this->name = $name;
-}  
-
-public function getDescription() {
-    return $this->description;
-}
-
-public function setDescription($description) {
-    $this->description = $description;
-}
-
-public function getImage() {
-    return $this->image;
-}
-
-public function setImage($image) {
-    $this->image = $image;
-}
-
-public function getCategory() {
-    return $this->category;
-}
-
-public function setCategory($category) {
-    $this->category = $category;
-}
-
-public function getIngredients() {
-    return $this->ingredients;
-}
-
-public function setIngredients($ingredients) {
-    $this->ingredients = $ingredients;
-}
 
 ?>
