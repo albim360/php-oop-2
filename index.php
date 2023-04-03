@@ -24,6 +24,18 @@ class Shop {
     public function getProducts() {
         return $this->products;
     }
+
+    trait Discountable {
+      public function getDiscountedPrice($discountPercentage) {
+          return round($this->price - ($this->price * ($discountPercentage / 100)), 2);
+      }
+  }
+  class OutOfStockException extends Exception {
+    public function __construct($message = "Il prodotto è esaurito", $code = 0, Throwable $previous = null) {
+        parent::__construct($message, $code, $previous);
+    }
+}
+  
 }
 
 ?>
